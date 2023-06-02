@@ -1,14 +1,11 @@
 <script setup>
 
-import MainWrapper from "./components/MainWrapper.vue";
-import Function from "./views/Function.vue";
-import Explore from "./views/Explore.vue";
+import MainWrapper from "./components/Template/MainWrapper.vue";
+
 </script>
 
 <template>
   <MainWrapper />
-  <Function />
-  <Explore />
 
 </template>
 
