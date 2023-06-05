@@ -1,3 +1,4 @@
+
 p{
     color: #b4b4b4;
 }
@@ -19,6 +20,9 @@ p{
   .root{
     width: 100%;
   }
+  .router-link-active{
+    background-color: red;
+  }
   .header{
     background-color: #d4960c;
     width: 100%;
@@ -33,28 +37,44 @@ p{
         
         li{
             list-style-type: none;
-            padding: 10px 20px;
             background-color: #c6c6c6;
             margin-top: 0;
             border-radius: 5px;
-            font-weight: 500;
-            color: #000;
+             padding: 10px 20px;
+
+            
+            a{
+              // padding: 10px 20px;
+              text-decoration: none;
+              font-weight: 500;
+              color: #000;
+              
+            }
         }
         li:hover{
             background-color: #282828;
             cursor: pointer;
+           a{
             color: #c6c6c6;
+           }
         }
       }
   }
-  .mainBody{
-    background-color: #282828;
+  .main-body{
+    background-color: #9b1616;
     margin: 30px;
     padding: 25px;
     border-radius: 8px;
   }
+  .page-container{
+    background-color: #282828;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
 
-  .leftTabs ul{
+  .leftSide .leftTabs ul{
     padding: 0;
     li{
         list-style-type: none;

@@ -1,8 +1,7 @@
 <script setup>
-
-import LeftSide from './Layout/LeftSide.vue';
-import Header from './Layout/Header.vue';
-import MainBody from './Template/MainBody.vue';
+import LeftSide from '../Layout/LeftSide.vue';
+import Header from '../Layout/Header.vue';
+import MainBody from './MainBody.vue';
 
 </script>
 
