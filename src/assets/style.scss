@@ -21,7 +21,10 @@ p{
     width: 100%;
   }
   .router-link-active{
-    background-color: red;
+    background-color: #282828;
+    padding: 10px 25px;
+    color: #fff !important;
+    border-radius: 5px;
   }
   .header{
     background-color: #d4960c;
@@ -33,26 +36,28 @@ p{
     .leftTabs ul{
         padding: 0;
         display: flex;
-        gap: 10px;
+        gap: 0px;
         
         li{
             list-style-type: none;
-            background-color: #c6c6c6;
+            background-color: transparent;
             margin-top: 0;
             border-radius: 5px;
-             padding: 10px 20px;
+            //  padding: 10px 20px;
 
             
             a{
               // padding: 10px 20px;
               text-decoration: none;
+              padding: 10px 25px;
+              display: block;
               font-weight: 500;
               color: #000;
               
             }
         }
         li:hover{
-            background-color: #282828;
+            // background-color: #282828;
             cursor: pointer;
            a{
             color: #c6c6c6;
