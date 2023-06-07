@@ -9,12 +9,16 @@ export default createRouter({
       component: () => import('@/views/Home.vue'),
     },
     {
-      path: '/function',
-      component: () => import('@/views/Function.vue'),
+      path: '/about',
+      component: () => import('@/views/About.vue'),
     },
     {
-      path: '/explore',
-      component: () => import('@/views/Explore.vue'),
+      path: '/portfolio',
+      component: () => import('@/views/Portfolio.vue'),
     },
+    {
+      path: '/services',
+      component: () => import('@/views/Services.vue')
+    }
   ],
 })
