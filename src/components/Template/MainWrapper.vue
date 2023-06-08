@@ -7,6 +7,7 @@ import MainBody from './MainBody.vue';
 
 <template>
    <div class="mainWrapper">
+    
         <LeftSide />
         <div class="root">
             <Header />

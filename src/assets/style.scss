@@ -15,16 +15,57 @@ p{
     width: 300px;
     height: 100vh;
     padding: 25px;
-    overflow-y: auto;
-    span svg{
-      position: absolute;
-      right: 17px;
-      top: 15px;
-      width: 40px;
-      cursor: pointer;
-      }
+    // overflow-y: auto;
+      .close-leftside {
+        position: absolute;
+        right: 13px;
+        top: 15px;
+        width: 40px;
+        display: none;
+        cursor: pointer;
+          svg{
+            width: 35px;
+          }
+        }
+        .hambarg{
+          position: absolute;
+          left: 325px;
+          top: 25px;
+          width: 0;
+          height: 0;
+          display: none;
+          cursor: pointer;
+          img{
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            border: 3px solid #282828;
+          }
+            svg{
+              width: 40px;
+              height: 40px;
+            }
+        }
+        .leftTabs{
+          overflow-y: auto;
+        }
     
   }
+  .profil-wrapper{
+    text-align: center;
+    .profile-avatar img{
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+      border: 8px solid #303030;
+    }
+    .profile-title{
+      font-size: 20px;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+  
   .leftSide .leftTabs ul{
     padding: 0;
     li{
@@ -58,15 +99,6 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    span svg{
-      position: absolute;
-      left: 25px;
-      top: 25px;
-      width: 40px;
-      cursor: pointer;
-      }
-  
     .leftTabs ul{
         padding: 0;
         display: flex;
@@ -132,8 +164,10 @@ p{
     color: #282828 ;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 1;
+    font-size: 50px;
   }
-  @-webkit-keyframes heartbeat {
+  @keyframes heartbeat {
     from {
       -webkit-transform: scale(1);
               transform: scale(1);
@@ -167,7 +201,7 @@ p{
               animation-timing-function: ease-out;
     }
   }
-
+  
 .temp-button{
   padding: 10px 20px;
   border: none;
@@ -180,6 +214,7 @@ p{
 @media screen and (max-width:1080px){
   .header{
     flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -187,6 +222,39 @@ p{
   .leftSide{
     position: absolute;
     z-index: 2;
+    left: -300px;
+    top: 0;
+    
+  }
+  .leftSide .hambarg{
+    display: block;
+    
+    // transform: translate(79px, 10px);
+  }
+  .leftSide .close-leftside{
+    display: block;
+  }
+  .leftSide.big .hambarg{
+    display: none;
+
+  }
+  .big{
+    left: 0px;
+    transition: all 0.5s ease-in;
+    animation: fadeInLeft 0.7s backwards;
   }
 }
- 
+
+@media screen and (max-width: 575px) {
+  .header .leftTabs ul li a{
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+  .heartbeat{
+    font-size: 7vw;
+  }
+  .page-container{
+    margin: 20px;
+  }
+  
+}
