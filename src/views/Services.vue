@@ -1,15 +1,17 @@
 <template>
     <div class="page-container" >
-       <div class="page-data" v-if="hasData()" >
+        <div class="page-content">
     <div class="hasData">
-        
-        <h1> Services Page</h1>
+        <button class="temp-button" @click='toggle = !toggle'> Click here </button>
+        <Transition name="slide-fade">
+        <h1 v-show='toggle'> Services Page</h1>
+        </Transition>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nisi rem ad iure, quis consequuntur cumque assumenda totam, ducimus fugiat sapiente ipsam adipisci quasi esse architecto officiis dignissimos? Enim, nam! sit amet consectetur adipisicing elit. Aliquid, nisi rem ad iure, quis consequuntur cumque assumenda totam, ducimus fugiat sapiente ipsam adipisci quasi esse architecto officiis dignissimos? Enim, nam!</p>
        
     </div>
     
     </div>
-       <div v-else class="no-data-message">
+       <div class="no-data-message">
             <h1>No Data Found</h1>
        </div>
     </div>
@@ -17,15 +19,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      data: null // or undefined or any other initial value
-    };
-  },
-  methods: {
-    hasData() {
-      return this.data !== null && this.data !== undefined;
-    }
-  }
-};
+    data () {
+   return {
+     toggle: true
+   }
+ },
+}
+
 </script>
