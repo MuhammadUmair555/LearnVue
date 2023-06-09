@@ -19,17 +19,5 @@
 
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        showRightNav: false,
-        active: false,
-      };
-    },
-    methods: {
-      toggleRightNav() {
-        this.showRightNav = !this.showRightNav;
-      },
-    },
-  };
+ 
 </script>
