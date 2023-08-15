@@ -4,5 +4,6 @@
 <template>
   <div class="mainBody">
    <router-view />
+   
   </div>
 </template>

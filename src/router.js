@@ -19,6 +19,10 @@ export default createRouter({
     {
       path: '/services',
       component: () => import('@/views/Services.vue')
+    },
+    {
+      path: '/contact',
+      component: () => import('@/views/Contact.vue')
     }
   ],
 })
