@@ -11,7 +11,8 @@ library.add(fab, fas, far)
 import router from './router'
 import './assets/main.css';
 import './assets/style.scss'
-// import './router'
+import './router'
+
 
 
 createApp(App).component("font-awesome-icon", FontAwesomeIcon).use(router).mount('#app')
